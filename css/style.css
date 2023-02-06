@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+}
+
+.header {
+    background-color: #7987FF;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__title {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main__block {
+    background-color: #7987FF;
+    max-width: 400px;
+    height: 250px;
+    width: 100%;
+    margin: 100px 5px 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.block__text {
+    color: white;
+    font-size: 100px;
+    width: 340px;
+    text-align: center;
+}
+
+.block__select {
+    width: 340px;
+    height: 25px;
+    padding: 0 5px;
+}
+
+.main__container {
+    width: 100%;
+}
+
+.main__guess {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.guess {
+    height: 85px;
+    width: 85px;
+    border-radius: 50px;
+    background-color: #7987FF;
+    margin: 0 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+}
+
+.main__guess h1 {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0 35px;
+}
+
+.main__block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main__block img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.main__h1 {
+    padding: 15px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.main__guess--name h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.block__text {
+    font-size: 100px;
+} 
+
+.button__how {
+    float: left;
+    font-size: 10px;
+    color: white;
+    background-color: #00ce00;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    line-height: 40px;
+    border: 1px solid #00aa00;
+}
+
+.button__play {
+    line-height: 40px;
+    cursor: pointer;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    float: left;
+    font-size: 10px;
+    color: white;
+    background-color: #00ce00;
+    border: 1px solid #00aa00;
+    font-weight: bold;
+}
+
+.container__button {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main__block--how {
+    cursor: pointer;
+    position: fixed;
+    max-width: 500px;
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 5px;
+    transition: 1s;
+    display: none;
+    animation-duration: 0.5s;
+    animation-name: opacity;
+}
+
+@keyframes opacity {
+    from { opacity: 0;}
+    to { opacity: 1;}
+}
+
+.block__close {
+    float: right;
+    padding: 10px;
+}
+
+.main__block--how h2 {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.main__block--how p {
+    text-align: center;
+}
+
+.block__img {
+    max-width: 300px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 468px) {
+    .guess {
+        width: 70px;
+        height: 70px;
+        font-size: 12px;
+        margin: 0 5px;
+    }
+    .main__guess h1 {
+        margin: 0 15px;
+        font-size: 20px;
+    }
+}
